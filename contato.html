@@ -28,17 +28,18 @@
                     <input type="email" name="email" placeholder="E-MAIL*" class="fordform" required>
                     <input type="tel" name="telefone" placeholder="TELEFONE*" class="fordform" required>
                     <select name="contato" class="fordform" required>
-                        <option selected disabled>TIPO DO CONTATO*</option>
-                        <option>ELOGIO</option>
-                        <option>RECLAMAÇÃO</option>
-                        <option>SOLITAÇÃO</option>
+                        <option selected disabled value="">TIPO DO CONTATO*</option>
+                        <option value="elogio">ELOGIO</option>
+                        <option value="reclamacao">RECLAMAÇÃO</option>
+                        <option value="solicitacao">SOLITAÇÃO</option>
                     </select>
                     <textarea name="mensagem" placeholder="MENSAGEM*" class="fordform" style="height: 50px;" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <button id="btnSubmit" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </main>
+    <script src="js/contato.js"></script>
     <footer>
         <nav id="social">
             <ul>
